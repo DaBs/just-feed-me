@@ -1,0 +1,69 @@
+{
+  "name": "just-feed-me",
+  "version": "0.0.1",
+  "description": "An webapp to randomly select a dish from JUST-EAT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaBs/just-feed-me.git"
+  },
+  "keywords": [
+    "just-eat"
+  ],
+  "author": "David Bjerremose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DaBs/just-feed-me/issues"
+  },
+  "homepage": "https://github.com/DaBs/just-feed-me#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-plugin-transform-runtime": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.11.1",
+    "browser-sync-middleware-spa": "^1.0.0",
+    "browserify": "^13.0.0",
+    "browserify-hmr": "^0.3.1",
+    "diff": "^2.2.2",
+    "globby": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.2",
+    "gulp-debug": "^2.1.2",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-util": "^3.0.7",
+    "hammerjs": "^2.0.6",
+    "hapi": "^15.0.3",
+    "inert": "^4.0.2",
+    "moment": "^2.14.1",
+    "node-sass": "^3.4.2",
+    "redux": "^3.5.2",
+    "redux-persist": "^3.2.2",
+    "redux-storage": "^4.0.1",
+    "redux-storage-engine-localstorage": "^1.1.1",
+    "superagent": "^1.8.1",
+    "through": "^2.3.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vue": "^1.0.16",
+    "vue-animated-list": "^1.0.2",
+    "vue-hot-reload-api": "^1.3.2",
+    "vue-redux": "0.0.2",
+    "vue-router": "^0.7.11",
+    "vueify": "^8.3.5",
+    "vueify-insert-css": "^1.0.0",
+    "watchify": "^3.7.0"
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.2.0",
+    "node-sass": "^3.8.0"
+  }
+}

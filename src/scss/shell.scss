@@ -1,0 +1,78 @@
+@import "normalize";
+
+@import "variables";
+@import "fonts";
+
+* {
+  transition: all 0.2s ease;
+}
+
+h1, h2 {
+  font-family: 'Futura Bold';
+  text-transform: uppercase;
+  font-size: 48px;
+  color: $main-color;
+  margin: 0;
+  margin-top: 200px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 32px;
+}
+img {
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Arial';
+  display: inline-block;
+  max-width: 400px;
+  color: $gray;
+}
+
+a {
+  color: $main-color;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: auto auto;
+  text-align: center;
+}
+
+footer {
+  padding-top: 50px;
+  position: relative;
+  text-align: center;
+  p {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+  }
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: none;
+  padding: 25px 25px 20px 25px;
+  color: #FFF;
+  background-color: $main-color;
+  font-family: 'Futura Bold';
+  font-size: 24px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($main-color, 20%);
+  }
+}
+
+.result {
+  h1 {
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+}
