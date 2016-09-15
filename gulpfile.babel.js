@@ -131,7 +131,10 @@ gulp.task('watch', () => {
   gulp.watch(['./src/*.html'], ['html']);
 });
 
-gulp.task('default', ['html', 'images', 'fonts', 'scss', 'javascript', 'watch', 'serve']);
+
+gulp.task('build', ['html', 'images', 'fonts', 'scss', 'javascript']);
+
+gulp.task('default', ['build', 'watch', 'serve']);
 
 
 
