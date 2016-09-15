@@ -1,6 +1,8 @@
 import request from 'superagent';
 
 
+
+
 class JustEatAPI {
   constructor(country) {
     this.country = country;
