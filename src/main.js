@@ -17,7 +17,7 @@ router.map({
     name: 'result',
     component: Result
   },
-  '*': {
+  '/': {
     name: 'front',
     component: Front
   }

@@ -2,6 +2,7 @@
   <div>
     <div class="map">
     </div>
+    <button type="button" v-on:click="gotoStart">TRY AGAIN</button>
   </div>
 </template>
 
@@ -23,6 +24,12 @@ export default {
       point: null,
       marker: null,
       infowindow: null
+    }
+  },
+
+  methods: {
+    gotoStart: function() {
+      this.$router.go({name: 'front'});
     }
   },
 
