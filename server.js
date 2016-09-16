@@ -21,7 +21,7 @@ const map = {
 }
 
 
-server.connection({port: 80});
+server.connection({port: 8080});
 
 
 server.register(Inert, err => {
