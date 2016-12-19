@@ -18,7 +18,13 @@ const server = new Hapi.Server({
 const map = {
   'DK': 'api.just-eat.dk',
   '*': 'api.just-eat.dk'
-}
+};
+
+const headers = {
+  'Accept-Language': 'en-GB',
+  'Accept-Version': '2',
+  'Authorization': 'Basic a2luZ3MtaGFjazpqNHlrN3ljb3Q1MHRmMng='
+};
 
 
 server.connection({port: 8080});
@@ -46,11 +52,9 @@ server.register(Inert, err => {
       const requestString = 'http://' + (map[req.query.country] ? map[req.query.country] : map['*']) + '/restaurants?q=' + req.query.zip;
       request
         .get(requestString)
+        .set(headers)
         .set({
-          'Accept-Language': 'en-GB',
-          'Accept-Tenant': req.query.country,
-          'Accept-Version': '2',
-          'Authorization': 'Basic a2luZ3MtaGFjazpqNHlrN3ljb3Q1MHRmMng='
+          'Accept-Tenant': req.query.country
         })
         .end((err, res) => {
           rep({err, res});
@@ -65,11 +69,9 @@ server.register(Inert, err => {
       const requestString = 'http://' + (map[req.query.country] ? map[req.query.country] : map['*']) + '/restaurants/' + req.query.id + '/productcategories?type=delivery';
       request
         .get(requestString)
+        .set(headers)
         .set({
-          'Accept-Language': 'en-GB',
           'Accept-Tenant': req.query.country,
-          'Accept-Version': '2',
-          'Authorization': 'Basic a2luZ3MtaGFjazpqNHlrN3ljb3Q1MHRmMng='
         })
         .end((err, res) => {
           rep({err, res});
